@@ -76,7 +76,7 @@ client.on("message", (msg) =>
     }
 
     //Replies
-    else if(input.toLowerCase() == "linker sucks")
+    else if(input.toLowerCase().indexOf("linker sucks") != -1)
     {
         msg.reply(":(")
     }
