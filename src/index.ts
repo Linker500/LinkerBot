@@ -6,7 +6,7 @@ client.on("ready", () => {
 
 const prefix = "~"
 client.on("message", (msg) => {
-    if(msg.content == "Linker-Sucks")
+    if(msg.content.toLowerCase() == "linker sucks")
     {
         msg.reply(":(")
     }
@@ -17,9 +17,9 @@ client.on("message", (msg) => {
         //TODO: qwerty and dvorak strings aren't perfectly accurate
         let output = ""
         let qwerty: string
-        qwerty = "qwertyuiopasdfghjkl;zxcvbnm,.QWERTYUIOPASDFGHJKL:ZXCVBNM<>"
+        qwerty = "qwertyuiop[]asdfghjkl;'zxcvbnm,./-=QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?_+"
         let dvorak: string
-        dvorak = "',.pyfgcrlaoeuidhtns;qjkxbmwv\"<>PYFGCRLAOEUIDHTNS:QJKXBMWV"
+        dvorak = "',.pyfgcrl/=aoeuidhtns-;qjkxbmwvz[]\"<>PYFGCRL?+AOEUIDHTNS_:QJKXBMWVZ{}"
 
         for(let i=7; i<msg.content.length; i++)
         {
@@ -37,9 +37,9 @@ client.on("message", (msg) => {
     {
         let output = ""
         let qwerty: string
-        qwerty = "qwertyuiopasdfghjkl;zxcvbnm,.QWERTYUIOPASDFGHJKL:ZXCVBNM<>"
+        qwerty = "qwertyuiop[]asdfghjkl;'zxcvbnm,./-=QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?_+"
         let dvorak: string
-        dvorak = "',.pyfgcrlaoeuidhtns;qjkxbmwv\"<>PYFGCRLAOEUIDHTNS:QJKXBMWV"
+        dvorak = "',.pyfgcrl/=aoeuidhtns-;qjkxbmwvz[]\"<>PYFGCRL?+AOEUIDHTNS_:QJKXBMWVZ{}"
 
         for(let i=7; i<msg.content.length; i++)
         {
