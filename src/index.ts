@@ -34,7 +34,7 @@ client.on("message", (msg) =>
             let dvorak: string
             dvorak = "',.pyfgcrl/=aoeuidhtns-;qjkxbmwvz[]\"<>PYFGCRL?+AOEUIDHTNS_:QJKXBMWVZ{}"
 
-            for(let i=6; i<input.length; i++)
+            for(let i=0; i<input.length; i++)
             {
                 let index = qwerty.indexOf(input.substring(i,i+1))
                 if(index == -1)
