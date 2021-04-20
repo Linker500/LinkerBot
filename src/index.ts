@@ -1,11 +1,11 @@
 import * as discord from "discord.js"
-import { token } from "./config"
+import config from "./config"
 const client = new discord.Client()
 client.on("ready", () => {
     console.log(`Logged in ${client.user?.tag}`)
 })
 
-const prefix = "~"
+const {prefix} = config;
 
 client.on("message", (msg) => 
 {
@@ -14,7 +14,7 @@ client.on("message", (msg) =>
     //Commands
     if(input.startsWith(prefix))
     {
-        input = input.substring(1,input.length) //Removes prefix
+        input = input.substring(prefix.length,input.length) //Removes prefix
         
         //""Help"" menu
         if(input.startsWith("help"))
@@ -82,4 +82,4 @@ client.on("message", (msg) =>
     }
 })
 
-client.login(token)
+client.login(config.token)
